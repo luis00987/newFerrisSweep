@@ -209,7 +209,12 @@
         capsLeft: capsleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPS &kp LEFT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS &kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT &kp CAPSLOCK>;
+
             label = "CAPSLEFT";
         };
 
