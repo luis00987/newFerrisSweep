@@ -218,11 +218,16 @@
             label = "CAPSLEFT";
         };
 
-        CapsRight: new_macro {
+        capsRight: capsRight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPS &kp RIGHT>;
-            label = "NEW_MACRO";
+            bindings =
+                <&macro_press>,
+                <&kp CAPS &kp RIGHT>,
+                <&macro_release>,
+                <&kp RIGHT &kp CAPSLOCK>;
+
+            label = "CAPSRIGHT";
         };
     };
 
