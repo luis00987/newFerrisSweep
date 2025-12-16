@@ -229,6 +229,30 @@
 
             label = "CAPSRIGHT";
         };
+
+        fullScreen: fullScreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS &kp F>,
+                <&macro_release>,
+                <&kp F &kp CAPSLOCK>;
+
+            label = "FULLSCREEN";
+        };
+
+        snapLeft: snapLeft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS &kp LC(LEFT)>,
+                <&macro_release>,
+                <&kp LC(LEFT) &kp CAPSLOCK>;
+
+            label = "SNAPLEFT";
+        };
     };
 
     keymap {
@@ -326,10 +350,10 @@
 
         ipadShorcuts {
             bindings = <
-&kp LG(W)  &trans     &capsLeft             &capsRight  &trans       &trans  &trans  &trans  &trans  &trans
-&kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)   &trans       &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &kp LS(LG(NUMBER_4))  &kp LG(H)   &kp LG(W)    &trans  &trans  &trans  &trans  &trans
-                                            &trans      &trans       &trans  &trans
+&kp LG(W)  &trans     &capsLeft             &capsRight  &trans         &trans  &trans     &trans  &trans  &trans
+&kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)   &fullScreen    &trans  &snapLeft  &trans  &trans  &trans
+&trans     &trans     &kp LS(LG(NUMBER_4))  &kp LG(H)   &kp LG(W)      &trans  &trans     &trans  &trans  &trans
+                                            &trans      &trans         &trans  &trans
             >;
         };
     };
