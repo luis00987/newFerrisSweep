@@ -64,7 +64,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMB";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 5 LEFT_WIN>;
+            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 10 LEFT_WIN>;
 
             tapping-term-ms = <380>;
         };
@@ -205,6 +205,22 @@
         };
     };
 
+    macros {
+        capsLeft: capsleft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPS &kp LEFT_ARROW>;
+            label = "CAPSLEFT";
+        };
+
+        CapsRight: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPS &kp RIGHT>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -295,6 +311,15 @@
 &kp LC(LS(TAB))  &kp LEFT    &kp DOWN    &kp RIGHT   &kp LC(TAB)        &none  &none  &none  &none  &none
 &kp LEFT_SHIFT   &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &none  &none  &none  &none  &none
                                          &kp C_MUTE  &none              &none  &none
+            >;
+        };
+
+        ipadShorcuts {
+            bindings = <
+&trans  &trans  &capsLeft  &CapsRight  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans      &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans      &trans    &trans  &trans  &trans  &trans  &trans
+                           &trans      &trans    &trans  &trans
             >;
         };
     };
