@@ -326,7 +326,7 @@
 
         ipadShorcuts {
             bindings = <
-&trans  &trans  &capsLeft  &CapsRight  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &capsLeft  &capsRight  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans      &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans      &trans    &trans  &trans  &trans  &trans  &trans
                            &trans      &trans    &trans  &trans
