@@ -173,14 +173,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        moMouse {
-            bindings = <&mo 8>;
-            key-positions = <11 12 13 31>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
         toAdj {
             bindings = <&mo 6>;
             key-positions = <0 4>;
@@ -216,6 +208,14 @@
             bindings = <&sl 11>;
             key-positions = <12 11 13>;
             timeout-ms = <200>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        toMouse {
+            bindings = <&mo 8>;
+            key-positions = <31 12>;
+            timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
