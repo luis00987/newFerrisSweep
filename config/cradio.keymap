@@ -324,7 +324,7 @@
             bindings = <
 &kp LG(LC(F4))  &kp LG(TAB)        &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))     &kp LG(LC(D))    &none  &none  &none  &none  &none
 &kp LG(A)       &kp LG(X)          &kp LG(C)               &kp LG(V)             &kp LG(E)        &none  &none  &none  &none  &none
-&kp LG(Z)       &kp LA(BACKSPACE)  &kp LG(LS(S))           &kp LG(H)             &kp LA(F4)       &none  &none  &none  &none  &none
+&kp LG(Z)       &kp LA(BACKSPACE)  &kp LG(LS(S))           &kp LG(D)             &kp LA(F4)       &none  &none  &none  &none  &none
                                                            &kp LG(LEFT_BRACKET)  &none            &none  &none
             >;
         };
