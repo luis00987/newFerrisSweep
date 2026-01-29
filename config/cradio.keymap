@@ -196,14 +196,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        leftSpace {
-            bindings = <&kp SPACE>;
-            key-positions = <22 23 21>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
         rightToLeft {
             bindings = <&sl 11>;
             key-positions = <12 11 13>;
@@ -221,16 +213,16 @@
         };
 
         superLeft {
-            bindings = <&kp LC(LA(LS(LEFT_WIN)))>;
-            key-positions = <10 13 12 11>;
+            bindings = <&sk LC(LA(LS(LEFT_WIN)))>;
+            key-positions = <21 22 23>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
 
         superRight {
-            bindings = <&kp LC(LA(LS(LEFT_WIN)))>;
-            key-positions = <16 17 18 19>;
+            bindings = <&sk LC(LA(LS(LEFT_WIN)))>;
+            key-positions = <26 27 28>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
