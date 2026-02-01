@@ -332,7 +332,7 @@
             bindings = <
 &kp LG(LS(LA(LC(LEFT))))  &kp LG(LS(LC(LA(RIGHT))))  &kp LC(LG(LEFT_ARROW))    &kp LC(LG(RIGHT))  &kp LG(LC(D))    &none  &none  &none  &none  &none
 &kp LG(A)                 &kp LG(X)                  &kp LG(C)                 &kp LG(V)          &kp LG(E)        &none  &none  &none  &none  &none
-&kp LG(Z)                 &kp LG(LEFT_BRACKET)       &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)          &kp LG(H)        &none  &none  &none  &none  &none
+&kp LG(Z)                 &kp LG(LEFT_BRACKET)       &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)          &kp LG(Q)        &none  &none  &none  &none  &none
                                                                                &key_repeat        &none            &none  &none
             >;
         };
