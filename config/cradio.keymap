@@ -223,30 +223,6 @@
     };
 
     macros {
-        snapLeft: snapLeft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp CAPS &kp LC(LEFT)>,
-                <&macro_release>,
-                <&kp LC(LEFT) &kp CAPSLOCK>;
-
-            label = "SNAPLEFT";
-        };
-
-        snapRight: snapRight {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp CAPS &kp LC(RIGHT)>,
-                <&macro_release>,
-                <&kp LC(RIGHT) &kp CAPSLOCK>;
-
-            label = "SNAPRIGHT";
-        };
-
         dictation: dictation {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -263,7 +239,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        L0 {
+        mainMac {
             bindings = <
 &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
@@ -293,7 +269,7 @@
         fn {
             bindings = <
 &none        &kp F7  &kp F8  &kp F9  &kp F12    &none     &none           &none      &none     &none
-&none        &kp F4  &kp F5  &kp F6  &kp F11    &sk CAPS  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI
+&dictation   &kp F4  &kp F5  &kp F6  &kp F11    &sk CAPS  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI
 &key_repeat  &kp F1  &kp F2  &kp F3  &kp F10    &kp CAPS  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI
                              &none   &none      &none     &none
             >;
@@ -355,10 +331,10 @@
 
         leftNav-Media {
             bindings = <
-&kp LG(W)        &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &none  &none  &none  &none  &none
+&kp C_MUTE       &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &none  &none  &none  &none  &none
 &kp LC(LS(TAB))  &kp LEFT    &kp DOWN    &kp RIGHT   &kp LC(TAB)        &none  &none  &none  &none  &none
 &kp LEFT_SHIFT   &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &none  &none  &none  &none  &none
-                                         &kp C_MUTE  &none              &none  &none
+                                         &none       &none              &none  &none
             >;
         };
 
