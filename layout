@@ -1,0 +1,325 @@
+layout: {zmk_keyboard: cradio}
+layers:
+  mainMac:
+    - Q
+    - W
+    - E
+    - R
+    - T
+    - Y
+    - U
+    - I
+    - O
+    - P
+    - {t: A, h: LEFT WIN}
+    - {t: S, h: LEFT ALT}
+    - {t: D, h: LEFT CONTROL}
+    - {t: F, h: LEFT SHIFT}
+    - {t: G, h: CAPS}
+    - {t: H, h: CAPS}
+    - {t: J, h: LEFT SHIFT}
+    - {t: K, h: LEFT CONTROL}
+    - {t: L, h: LEFT ALT}
+    - {t: ;, h: LEFT WIN}
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ','
+    - .
+    - /
+    - {t: TAB, h: fn}
+    - '&LTHUMB'
+    - {t: SPACE, h: num}
+    - {t: ENTER, h: nav-media}
+
+  "mouse (D + LTHUMB)":
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - LEFT SHIFT
+    - '&mkp MB2'
+    - {t: '&mkp MB3', h: 'D', type: held}
+    - '&mkp MB1'
+    - {t: mainMac, h: toggle}
+    - {t: mainMac, h: toggle}
+    - ''
+    - ''
+    - ''
+    - ''
+    - LEFT CONTROL
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - fn
+    - {t: macShorcuts0, h: 'LTHUMB', type: held}
+    - num
+    - nav-media
+
+  macShorcuts0:
+    - Hyper+LEFT
+    - Hyper+RIGHT
+    - Ctl+Gui+LEFT ARROW
+    - Ctl+Gui+RIGHT
+    - Gui+Ctl+D
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - Gui+A
+    - Gui+X
+    - Gui+C
+    - Gui+V
+    - Gui+E
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - Gui+Z
+    - Gui+Sft+5
+    - Gui+Sft+Ctl+4
+    - Gui+D
+    - Gui+Q
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - Gui+[
+    - {type: held}
+    - ''
+    - ''
+
+  customWinSc:
+    - Gui+LEFT
+    - Gui+RIGHT
+    - Ctl+Gui+LEFT
+    - Ctl+Gui+RIGHT
+    - Gui+Ctl+D
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - Ctl+A
+    - Ctl+X
+    - Ctl+C
+    - Ctl+V
+    - Gui+E
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - Ctl+Z
+    - AC HOME
+    - Gui+Sft+S
+    - Gui+D
+    - Alt+F4
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+
+  fn:
+    - '&siri'
+    - F7
+    - F8
+    - F9
+    - F12
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - '&dictation'
+    - F4
+    - F5
+    - F6
+    - F11
+    - {t: CAPS, h: sticky}
+    - {t: LEFT SHIFT, h: sticky}
+    - {t: LCTRL, h: sticky}
+    - {t: LALT, h: sticky}
+    - {t: LEFT GUI, h: sticky}
+    - '&key_repeat'
+    - F1
+    - F2
+    - F3
+    - F10
+    - CAPS
+    - LEFT SHIFT
+    - LCTRL
+    - LALT
+    - LEFT GUI
+    - {type: held}
+    - ''
+    - ''
+    - ''
+
+  num:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - +
+    - '7'
+    - '8'
+    - '9'
+    - '*'
+    - {t: LEFT GUI, h: sticky}
+    - {t: LALT, h: sticky}
+    - {t: LCTRL, h: sticky}
+    - {t: LSHFT, h: sticky}
+    - {t: CAPS, h: sticky}
+    - '-'
+    - '4'
+    - '5'
+    - '6'
+    - /
+    - LEFT GUI
+    - LALT
+    - LCTRL
+    - LEFT SHIFT
+    - CAPS
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    - '='
+    - ''
+    - ''
+    - {type: held}
+    - .
+
+  nav-media:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - VOL UP
+    - PG UP
+    - UP
+    - PG DN
+    - MUTE
+    - {t: LEFT GUI, h: sticky}
+    - {t: LALT, h: sticky}
+    - {t: LCTRL, h: sticky}
+    - {t: LSHFT, h: sticky}
+    - {t: CAPS, h: sticky}
+    - HOME
+    - LEFT
+    - DOWN
+    - RIGHT
+    - END
+    - LEFT GUI
+    - LALT
+    - LCTRL
+    - LEFT SHIFT
+    - CAPS
+    - VOL DN
+    - PREV
+    - PLAY
+    - NEXT
+    - CMENU
+    - ''
+    - ''
+    - ''
+    - {type: held}
+
+  "symb (LTHUMB + SPACE)":
+    - '!'
+    - '@'
+    - '#'
+    - $
+    - '%'
+    - +
+    - '['
+    - ']'
+    - '`'
+    - '*'
+    - {t: LEFT GUI, h: sticky}
+    - {t: LALT, h: sticky}
+    - {t: LCTRL, h: sticky}
+    - {t: LEFT SHIFT, h: sticky}
+    - {t: CAPS, h: sticky}
+    - '-'
+    - (
+    - )
+    - _
+    - /
+    - ^
+    - '&'
+    - \
+    - ''''
+    - '"'
+    - '|'
+    - '{'
+    - '}'
+    - '~'
+    - '='
+    - ''
+    - {t: '&trans', h: 'LTHUMB', type: held}
+    - {t: '&trans', h: 'SPACE', type: held}
+    - ''
+
+  adj:
+    - {t: '&trans', h: 'Q', type: held}
+    - ''
+    - ''
+    - ''
+    - {t: '&trans', h: 'T', type: held}
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - '&studio_unlock'
+    - BRI INC
+    - BRIGHTNESS DEC
+    - ''
+    - BT CLR
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - OUT TOG
+    - ''
+    - '&bootloader'
+    - '&bootloader'
+    - ''
