@@ -358,32 +358,5 @@
                               &kp RET  &kp SPACE    &none  &none
             >;
         };
-
-        reserved0 {
-            bindings = <
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                     &none  &none    &none  &none
-            >;
-        };
-
-        reserved1 {
-            bindings = <
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                     &none  &none    &none  &none
-            >;
-        };
-
-        reserved2 {
-            bindings = <
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                     &none  &none    &none  &none
-            >;
-        };
     };
 };
