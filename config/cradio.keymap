@@ -68,6 +68,16 @@
 
             tapping-term-ms = <380>;
         };
+
+        tapToHoldMo: tapToHoldMo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPTOHOLDMO";
+            #binding-cells = <2>;
+            tapping-term-ms = <80>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            bindings = <&mo>, <&to>;
+        };
     };
 
     combos {
@@ -159,7 +169,7 @@
 
         LhandOHM {
             bindings = <&mo 9>;
-            key-positions = <13 31>;
+            key-positions = <13 30>;
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -167,7 +177,7 @@
 
         RhandOHM {
             bindings = <&mo 9>;
-            key-positions = <16 32>;
+            key-positions = <16 33>;
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -230,8 +240,8 @@
         };
 
         tomainlayer {
-            bindings = <&mo 0>;
-            key-positions = <30 33>;
+            bindings = <&tapToHoldMo 12 0>;
+            key-positions = <13 31>;
             timeout-ms = <100>;
             slow-release;
         };
@@ -371,6 +381,15 @@
 &kp SEMI  &kp L    &kp K      &kp J    &kp H        &none  &none  &none  &none  &none
 &kp FSLH  &kp DOT  &kp COMMA  &kp M    &kp N        &none  &none  &none  &none  &none
                               &kp RET  &kp SPACE    &none  &none
+            >;
+        };
+
+        momentaryABC {
+            bindings = <
+&kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
+&hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
+&kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
+                                                       &lt 4 TAB          &LTHUMB        &lt 5 SPACE  &lt 6 ENTER
             >;
         };
     };
