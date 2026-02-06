@@ -220,6 +220,14 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        toMain {
+            bindings = <&to 0>;
+            key-positions = <10 13>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     macros {
