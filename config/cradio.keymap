@@ -242,7 +242,7 @@
         tomainlayer {
             bindings = <&tapToHoldMo 12 0>;
             key-positions = <13 31>;
-            timeout-ms = <100>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <50>;
         };
