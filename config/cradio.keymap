@@ -68,6 +68,15 @@
 
             tapping-term-ms = <380>;
         };
+
+        toTapMoHold: toTapMoHold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOTAPMOHOLD";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <60>;
+        };
     };
 
     combos {
@@ -224,6 +233,14 @@
         toMain {
             bindings = <&to 0>;
             key-positions = <10 13>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        tomainlayer {
+            bindings = <&toTapMoHold 0 0>;
+            key-positions = <30 33>;
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
