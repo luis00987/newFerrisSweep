@@ -244,6 +244,7 @@
             key-positions = <13 31>;
             timeout-ms = <100>;
             slow-release;
+            require-prior-idle-ms = <50>;
         };
     };
 
