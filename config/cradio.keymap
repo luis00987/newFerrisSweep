@@ -235,6 +235,7 @@
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
+            layers = <1>;
         };
     };
 
