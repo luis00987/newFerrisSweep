@@ -232,10 +232,8 @@
         tomainlayer {
             bindings = <&mo 0>;
             key-positions = <30 33>;
-            timeout-ms = <40>;
+            timeout-ms = <100>;
             slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <1>;
         };
     };
 
