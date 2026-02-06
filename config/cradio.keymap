@@ -68,17 +68,6 @@
 
             tapping-term-ms = <380>;
         };
-
-        toTapMoHold: toTapMoHold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TOTAPMOHOLD";
-            bindings = <&mo>, <&to>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            hold-while-undecided;
-        };
     };
 
     combos {
@@ -241,7 +230,7 @@
         };
 
         tomainlayer {
-            bindings = <&toTapMoHold 0 0>;
+            bindings = <&mo 0>;
             key-positions = <30 33>;
             timeout-ms = <40>;
             slow-release;
