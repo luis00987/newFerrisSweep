@@ -241,7 +241,7 @@
 
         toRectangleSnap {
             bindings = <&mo 13>;
-            key-positions = <31 14>;
+            key-positions = <31 11>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
