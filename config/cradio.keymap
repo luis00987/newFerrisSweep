@@ -160,13 +160,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        enterL {
-            bindings = <&kp ENTER>;
-            key-positions = <21 22>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-        };
-
         LhandOHM {
             bindings = <&mo 9>;
             key-positions = <30 12>;
@@ -231,14 +224,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        toMain {
-            bindings = <&to 0>;
-            key-positions = <10 13>;
-            timeout-ms = <40>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
         tomainlayer {
             bindings = <&tapToHoldMo 12 0>;
             key-positions = <13 31>;
@@ -251,6 +236,14 @@
             bindings = <&kp LC(LA(DOWN))>;
             key-positions = <10 30>;
             timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
+
+        toRectangleSnap {
+            bindings = <&mo 13>;
+            key-positions = <31 14>;
+            timeout-ms = <150>;
+            slow-release;
             require-prior-idle-ms = <100>;
         };
     };
@@ -279,7 +272,8 @@
 
             label = "SIRI";
         };
-                fullScreen: fullScreen {
+
+        fullScreen: fullScreen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -414,10 +408,10 @@
 
         rectangleSnap {
             bindings = <
-&none  &none  &fullScreen  &none  &none    &none  &none  &none  &none  &none
-&none  &kp LS(LG(LC(LA(LEFT))))  &kp LA(LC(ENTER))  &kp LS(LG(LC(LA(RIGHT)))) &none    &none  &none  &none  &none  &none
+&none          &none                     &fullScreen        &none                      &none            &none  &none  &none  &none  &none
+&none          &kp LS(LG(LC(LA(LEFT))))  &kp LA(LC(ENTER))  &kp LS(LG(LC(LA(RIGHT))))  &none            &none  &none  &none  &none  &none
 &kp LA(LC(E))  &kp LA(LC(D))             &kp LA(LC(F))      &kp LA(LC(G))              &kp LA(LC(T))    &none  &none  &none  &none  &none
-                     &none  &none    &none  &none
+                                                            &none                      &none            &none  &none
             >;
         };
     };
