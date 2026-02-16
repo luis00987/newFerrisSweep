@@ -400,5 +400,14 @@
                                                        &lt 4 TAB          &LTHUMB        &lt 5 SPACE  &lt 6 ENTER
             >;
         };
+
+        rectangleSnap {
+            bindings = <
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+                     &none  &none    &none  &none
+            >;
+        };
     };
 };
