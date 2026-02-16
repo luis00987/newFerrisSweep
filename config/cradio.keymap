@@ -246,6 +246,14 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        leftEnter {
+            bindings = <&kp ENTER>;
+            key-positions = <21 22>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <80>;
+        };
     };
 
     macros {
