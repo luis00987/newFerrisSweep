@@ -246,6 +246,13 @@
             slow-release;
             require-prior-idle-ms = <50>;
         };
+
+        appWindows {
+            bindings = <&kp LC(LA(DOWN))>;
+            key-positions = <10 30>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     macros {
