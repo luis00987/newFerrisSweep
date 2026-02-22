@@ -208,22 +208,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        superLeft {
-            bindings = <&sk LC(LA(LS(LEFT_WIN)))>;
-            key-positions = <11 12 13 30>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        superRight {
-            bindings = <&sk LC(LA(LS(LEFT_WIN)))>;
-            key-positions = <16 17 18 33>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
         tomainlayer {
             bindings = <&tapToHoldMo 12 0>;
             key-positions = <13 31>;
@@ -253,6 +237,14 @@
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <80>;
+        };
+
+        toFn {
+            bindings = <&mo 4>;
+            key-positions = <31 11 12 13>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
     };
 
@@ -302,7 +294,7 @@
 &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
 &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 4 TAB          &LTHUMB        &lt 5 SPACE  &lt 6 ENTER
+                                                       &lt 14 TAB         &LTHUMB        &lt 5 SPACE  &lt 6 ENTER
             >;
         };
 
@@ -425,10 +417,10 @@
 
         super+KP {
             bindings = <
-&kp LC(LG(LA(LS(Q))))  &kp LC(LG(LA(LS(W))))  &kp LC(LG(LA(LS(E))))  &kp LC(LG(LA(LS(R))))  &kp LC(LG(LA(LS(T))))    &kp LC(LG(LA(LS(Y))))  &kp LC(LG(LA(LS(U))))  &kp LC(LG(LA(LS(I))))  &kp LC(LG(LA(LS(O))))       &kp LC(LG(LA(LS(P))))          
-&kp LC(LG(LA(LS(A))))  &kp LC(LG(LA(LS(S))))  &kp LC(LG(LA(LS(D))))  &kp LC(LG(LA(LS(F))))  &kp LC(LG(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LC(LG(LA(LS(J))))  &kp LC(LG(LA(LS(K))))  &kp LC(LG(LA(LS(L))))       &kp LC(LG(LA(LS(SEMICOLON))))  
-&kp LC(LG(LA(LS(Z))))  &kp LC(LG(LA(LS(X))))  &kp LC(LG(LA(LS(C))))  &kp LC(LG(LA(LS(V))))  &kp LC(LG(LA(LS(B))))    &kp LC(LG(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &kp LC(COMMA)          &kp LC(LG(LA(LS(PERIOD))))  &kp LC(LG(LA(LS(SLASH))))      
-                                                                      &none                  &none                    &none                  &none                 
+&kp LC(LG(LA(LS(Q))))  &kp LC(LG(LA(LS(W))))  &kp LC(LG(LA(LS(E))))  &kp LC(LG(LA(LS(R))))  &kp LC(LG(LA(LS(T))))    &kp LC(LG(LA(LS(Y))))  &kp LC(LG(LA(LS(U))))  &kp LC(LG(LA(LS(I))))  &kp LC(LG(LA(LS(O))))       &kp LC(LG(LA(LS(P))))
+&kp LC(LG(LA(LS(A))))  &kp LC(LG(LA(LS(S))))  &kp LC(LG(LA(LS(D))))  &kp LC(LG(LA(LS(F))))  &kp LC(LG(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LC(LG(LA(LS(J))))  &kp LC(LG(LA(LS(K))))  &kp LC(LG(LA(LS(L))))       &kp LC(LG(LA(LS(SEMICOLON))))
+&kp LC(LG(LA(LS(Z))))  &kp LC(LG(LA(LS(X))))  &kp LC(LG(LA(LS(C))))  &kp LC(LG(LA(LS(V))))  &kp LC(LG(LA(LS(B))))    &kp LC(LG(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &kp LC(COMMA)          &kp LC(LG(LA(LS(PERIOD))))  &kp LC(LG(LA(LS(SLASH))))
+                                                                     &none                  &none                    &none                  &none
             >;
         };
     };
