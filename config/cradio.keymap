@@ -425,10 +425,10 @@
 
         super+KP {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&kp LC(LG(LA(LS(Q))))  &kp LC(LG(LA(LS(W))))  &kp LC(LG(LA(LS(E))))  &kp LC(LG(LA(LS(R))))  &kp LC(LG(LA(LS(T))))    &kp LC(LG(LA(LS(Y))))  &kp LC(LG(LA(LS(U))))  &kp LC(LG(LA(LS(I))))  &kp LC(LG(LA(LS(O))))       &kp LC(LG(LA(LS(P))))          
+&kp LC(LG(LA(LS(A))))  &kp LC(LG(LA(LS(S))))  &kp LC(LG(LA(LS(D))))  &kp LC(LG(LA(LS(F))))  &kp LC(LG(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LC(LG(LA(LS(J))))  &kp LC(LG(LA(LS(K))))  &kp LC(LG(LA(LS(L))))       &kp LC(LG(LA(LS(SEMICOLON))))  
+&kp LC(LG(LA(LS(Z))))  &kp LC(LG(LA(LS(X))))  &kp LC(LG(LA(LS(C))))  &kp LC(LG(LA(LS(V))))  &kp LC(LG(LA(LS(B))))    &kp LC(LG(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &kp LC(COMMA)          &kp LC(LG(LA(LS(PERIOD))))  &kp LC(LG(LA(LS(SLASH))))      
+                                                                      &none                  &none                    &none                  &none                 
             >;
         };
     };
