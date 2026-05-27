@@ -248,6 +248,14 @@
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
         };
+
+        toShorcuts2 {
+            bindings = <&mo 2>;
+            key-positions = <11 12 13 31 10>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     macros {
