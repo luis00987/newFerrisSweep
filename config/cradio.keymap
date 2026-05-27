@@ -251,7 +251,7 @@
 
         toShorcuts2 {
             bindings = <&mo 2>;
-            key-positions = <11 12 13 31 10>;
+            key-positions = <11 31>;
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -295,7 +295,7 @@
             >;
         };
 
-        customSC {
+        customSC2 {
             bindings = <
 &trans      &trans      &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans
 &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &trans  &trans  &trans  &trans  &trans
