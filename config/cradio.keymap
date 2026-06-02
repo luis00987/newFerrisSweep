@@ -256,6 +256,13 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        leftQuestion {
+            bindings = <&kp QUESTION>;
+            key-positions = <1 2>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <40>;
+        };
     };
 
     macros {
