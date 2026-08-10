@@ -257,10 +257,18 @@
             require-prior-idle-ms = <40>;
         };
 
-        toMouse {
+        moMouse {
             bindings = <&mo 13>;
             key-positions = <31 0>;
-            timeout-ms = <40>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        toMouse {
+            bindings = <&to 13>;
+            key-positions = <0 30>;
+            timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -407,7 +415,7 @@
 &trans    &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
 &mkp MB4  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans    &trans  &trans  &trans  &trans  &trans
 &trans    &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-                                &trans     &trans    &trans  &trans
+                                &trans     &to 0     &trans  &trans
             >;
         };
     };
