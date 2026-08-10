@@ -267,10 +267,20 @@
 
         toMouse {
             bindings = <&to 1>;
-            key-positions = <31 12>;
+            key-positions = <10 14>;
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        moMain {
+            bindings = <&mo 2>;
+            key-positions = <31 20>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+            layers = <1>;
         };
     };
 
