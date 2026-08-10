@@ -263,7 +263,6 @@
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         toMouse {
@@ -272,16 +271,22 @@
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         moMain {
             bindings = <&mo 2>;
-            key-positions = <31 13>;
+            key-positions = <31 12>;
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <1>;
+        };
+
+        toMain {
+            bindings = <&to 0>;
+            key-positions = <13 10>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
     };
 
