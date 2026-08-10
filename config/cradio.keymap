@@ -258,7 +258,7 @@
         };
 
         moMouse {
-            bindings = <&mo 1>;
+            bindings = <&to 1>;
             key-positions = <31 13>;
             timeout-ms = <40>;
             slow-release;
@@ -267,23 +267,7 @@
 
         toMouse {
             bindings = <&to 1>;
-            key-positions = <10 31>;
-            timeout-ms = <40>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        moMain {
-            bindings = <&mo 2>;
             key-positions = <31 12>;
-            timeout-ms = <40>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        toMain {
-            bindings = <&to 0>;
-            key-positions = <13 10>;
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -323,7 +307,7 @@
 &none           &kp HOME      &mkp MB4   &kp END         &none              &none  &none  &none  &none  &none
 &msc SCRL_LEFT  &mkp RCLK     &mkp MCLK  &mkp LCLK       &msc SCRL_RIGHT    &none  &none  &none  &none  &none
 &none           &msc SCRL_UP  &mkp MB5   &msc SCRL_DOWN  &none              &none  &none  &none  &none  &none
-                                         &mo 14          &mo 3              &mo 7  &mo 8
+                                         &mo 2           &mo 3              &mo 7  &mo 8
             >;
         };
 
