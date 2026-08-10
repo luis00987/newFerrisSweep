@@ -64,7 +64,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMBMAC";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 3 LG(SPACE)>;
+            bindings = <&tapSk_holdLayer 2 LEFT_SHIFT>, <&lt 4 LG(SPACE)>;
 
             tapping-term-ms = <380>;
         };
@@ -83,7 +83,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMBWIN";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 3 LEFT_SHIFT>, <&lt 0 LEFT_WIN>;
+            bindings = <&tapSk_holdLayer 4 LEFT_SHIFT>, <&lt 0 LEFT_WIN>;
 
             tapping-term-ms = <380>;
         };
@@ -100,7 +100,7 @@
         };
 
         toSymb {
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <31 32>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
@@ -172,7 +172,7 @@
         };
 
         LhandOHM {
-            bindings = <&mo 9>;
+            bindings = <&mo 10>;
             key-positions = <30 13>;
             timeout-ms = <40>;
             slow-release;
@@ -180,7 +180,7 @@
         };
 
         RhandOHM {
-            bindings = <&mo 9>;
+            bindings = <&mo 10>;
             key-positions = <33 16>;
             timeout-ms = <40>;
             slow-release;
@@ -188,7 +188,7 @@
         };
 
         toAdj {
-            bindings = <&mo 8>;
+            bindings = <&mo 9>;
             key-positions = <0 4>;
             timeout-ms = <150>;
             slow-release;
@@ -196,7 +196,7 @@
         };
 
         toLeftMedia-Nav {
-            bindings = <&mo 10>;
+            bindings = <&mo 11>;
             key-positions = <31 1 2 3>;
             timeout-ms = <150>;
             slow-release;
@@ -204,7 +204,7 @@
         };
 
         rightToLeft {
-            bindings = <&sl 11>;
+            bindings = <&sl 12>;
             key-positions = <12 11 13>;
             timeout-ms = <200>;
             slow-release;
@@ -231,7 +231,7 @@
             key-positions = <17 18>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <2>;
+            layers = <3>;
         };
 
         wordDelLWin {
@@ -239,11 +239,11 @@
             key-positions = <12 11>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <2>;
+            layers = <3>;
         };
 
         toFn {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <11 12 13 31>;
             slow-release;
             timeout-ms = <40>;
@@ -258,7 +258,7 @@
         };
 
         moMouse {
-            bindings = <&mo 13>;
+            bindings = <&mo 1>;
             key-positions = <31 13>;
             timeout-ms = <150>;
             slow-release;
@@ -266,7 +266,7 @@
         };
 
         toMouse {
-            bindings = <&to 13>;
+            bindings = <&to 1>;
             key-positions = <31 10>;
             timeout-ms = <150>;
             slow-release;
@@ -298,7 +298,16 @@
 &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
 &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 12 TAB         &LThumbMac     &lt 5 SPACE  &lt 6 ENTER
+                                                       &lt 13 TAB         &LThumbMac     &lt 6 SPACE  &lt 7 ENTER
+            >;
+        };
+
+        mouse {
+            bindings = <
+&none           &kp HOME      &none      &kp END         &none              &none  &none  &none  &none  &none
+&msc SCRL_LEFT  &mkp RCLK     &mkp MCLK  &mkp LCLK       &msc SCRL_RIGHT    &none  &none  &none  &none  &none
+&none           &msc SCRL_UP  &none      &msc SCRL_DOWN  &none              &none  &none  &none  &none  &none
+                                         &none           &to 0              &none  &none
             >;
         };
 
@@ -316,7 +325,7 @@
 &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml CAPS G    &hmr CAPS H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
 &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 12 TAB         &LThumbWin     &lt 5 SPACE  &lt 6 ENTER
+                                                       &lt 13 TAB         &LThumbWin     &lt 6 SPACE  &lt 7 ENTER
             >;
         };
 
@@ -369,7 +378,7 @@
             bindings = <
 &none  &none  &none  &none       &none          &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4
 &none  &none  &none  &none       &none          &studio_unlock  &kp C_BRI_INC  &kp C_BRIGHTNESS_DEC  &none         &bt BT_CLR
-&none  &none  &none  &none       &none          &none           &to 0          &to 2                 &none         &out OUT_TOG
+&none  &none  &none  &none       &none          &none           &to 0          &to 3                 &none         &out OUT_TOG
                      &sys_reset  &bootloader    &bootloader     &sys_reset
             >;
         };
@@ -407,15 +416,6 @@
 &kp LC(LG(LA(LS(A))))  &kp LC(LG(LA(LS(S))))  &kp LC(LG(LA(LS(D))))  &kp LC(LG(LA(LS(F))))  &kp LC(LG(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LC(LG(LA(LS(J))))  &kp LC(LG(LA(LS(K))))  &kp LC(LG(LA(LS(L))))       &kp LC(LG(LA(LS(SEMICOLON))))
 &kp LC(LG(LA(LS(Z))))  &kp LC(LG(LA(LS(X))))  &kp LC(LG(LA(LS(C))))  &kp LC(LG(LA(LS(V))))  &kp LC(LG(LA(LS(B))))    &kp LC(LG(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &kp LC(COMMA)          &kp LC(LG(LA(LS(PERIOD))))  &kp LC(LG(LA(LS(SLASH))))
                                                                      &none                  &none                    &none                  &none
-            >;
-        };
-
-        mouse {
-            bindings = <
-&none           &kp HOME      &none      &kp END         &none              &none  &none  &none  &none  &none
-&msc SCRL_LEFT  &mkp RCLK     &mkp MCLK  &mkp LCLK       &msc SCRL_RIGHT    &none  &none  &none  &none  &none
-&none           &msc SCRL_UP  &none      &msc SCRL_DOWN  &none              &none  &none  &none  &none  &none
-                                         &none           &to 0              &none  &none
             >;
         };
     };
