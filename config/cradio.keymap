@@ -256,6 +256,14 @@
             timeout-ms = <70>;
             require-prior-idle-ms = <40>;
         };
+
+        toMouse {
+            bindings = <&mo 13>;
+            key-positions = <31 0>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     macros {
@@ -394,7 +402,7 @@
             >;
         };
 
-        layer_13 {
+        mouse {
             bindings = <
 &trans    &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
 &mkp MB4  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans    &trans  &trans  &trans  &trans  &trans
