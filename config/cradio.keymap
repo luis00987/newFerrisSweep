@@ -272,6 +272,14 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        toMain {
+            bindings = <&tapToHoldMo 2 0>;
+            key-positions = <31 10>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     macros {
