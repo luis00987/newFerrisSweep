@@ -280,6 +280,13 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        openRecentlyClosed {
+            bindings = <&kp LG(LS(T))>;
+            key-positions = <1 0>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <40>;
+        };
     };
 
     macros {
