@@ -278,7 +278,7 @@
             key-positions = <31 10 13>;
             timeout-ms = <250>;
             slow-release;
-            require-prior-idle-ms = <40>;
+            require-prior-idle-ms = <30>;
         };
 
         openRecentlyClosed {
