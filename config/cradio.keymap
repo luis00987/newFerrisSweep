@@ -303,20 +303,6 @@
 
             label = "NEW_MACRO";
         };
-
-        fillWindow: fillWindow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp GLOBE &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp F>,
-                <&macro_release>,
-                <&kp GLOBE &kp LEFT_SHIFT>;
-
-            label = "FILLWINDOW";
-        };
     };
 
     keymap {
