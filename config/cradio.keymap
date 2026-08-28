@@ -303,6 +303,20 @@
 
             label = "NEW_MACRO";
         };
+
+        fillWindow: fillWindow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp GLOBE &kp LEFT_SHIFT>;
+
+            label = "FILLWINDOW";
+        };
     };
 
     keymap {
@@ -338,7 +352,7 @@
         macShorcuts0 {
             bindings = <
 &kp LS(LA(LC(LG(LEFT))))  &kp LG(LS(LC(LA(RIGHT))))  &kp LC(LG(LA(A)))         &kp LC(LG(LA(B)))     &kp LG(LC(D))    &none  &none  &none  &none  &none
-&kp LG(A)                 &kp LG(X)                  &kp LG(C)                 &kp LG(V)             &kp LG(LC(F))    &none  &none  &none  &none  &none
+&kp LG(A)                 &kp LG(X)                  &kp LG(C)                 &kp LG(V)             &fillWindow      &none  &none  &none  &none  &none
 &kp LG(Z)                 &kp LG(LS(N5))             &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)             &kp LG(W)        &none  &none  &none  &none  &none
                                                                                &kp LG(LEFT_BRACKET)  &none            &none  &none
             >;
