@@ -275,10 +275,10 @@
 
         toMain {
             bindings = <&tapToHoldMo 2 0>;
-            key-positions = <31 10>;
-            timeout-ms = <40>;
+            key-positions = <31 10 13>;
+            timeout-ms = <150>;
             slow-release;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <40>;
         };
 
         openRecentlyClosed {
