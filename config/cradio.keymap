@@ -258,7 +258,7 @@
         };
 
         moMouse {
-            bindings = <&to 1>;
+            bindings = <&mo 1>;
             key-positions = <31 13>;
             timeout-ms = <40>;
             slow-release;
