@@ -276,7 +276,7 @@
         toMain {
             bindings = <&tapToHoldMo 2 0>;
             key-positions = <31 10>;
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -284,6 +284,13 @@
         openRecentlyClosed {
             bindings = <&kp LG(LS(T))>;
             key-positions = <1 0>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <40>;
+        };
+
+        newTab {
+            bindings = <&kp LG(T)>;
+            key-positions = <1 3>;
             timeout-ms = <70>;
             require-prior-idle-ms = <40>;
         };
