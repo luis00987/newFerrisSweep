@@ -275,7 +275,7 @@
 
         toMain {
             bindings = <&tapToHoldMo 2 0>;
-            key-positions = <31 10>;
+            key-positions = <31 10 13>;
             timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <100>;
