@@ -299,11 +299,10 @@
 
         moMain {
             bindings = <&mo 2>;
-            key-positions = <31 11 13>;
-            timeout-ms = <40>;
+            key-positions = <31 10 11 12 13>;
+            timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
     };
 
