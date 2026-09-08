@@ -266,15 +266,6 @@
             layers = <0>;
         };
 
-        toMouse {
-            bindings = <&to 1>;
-            key-positions = <31 12>;
-            timeout-ms = <40>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
         openRecentlyClosed {
             bindings = <&kp LG(LS(T))>;
             key-positions = <1 0>;
@@ -291,8 +282,8 @@
 
         toMain {
             bindings = <&to 0>;
-            key-positions = <10 14>;
-            timeout-ms = <40>;
+            key-positions = <10 14 13>;
+            timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -300,6 +291,14 @@
         moMain {
             bindings = <&mo 2>;
             key-positions = <31 10 11 12 13>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        toMouse {
+            bindings = <&to 1>;
+            key-positions = <31 10 13>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
