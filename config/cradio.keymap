@@ -282,7 +282,7 @@
 
         toMain {
             bindings = <&to 0>;
-            key-positions = <13 20 31>;
+            key-positions = <13 31 11>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
