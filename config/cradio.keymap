@@ -303,6 +303,30 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        tleft {
+            bindings = <&kp LS(LC(LG(A)))>;
+            key-positions = <31 0 1>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        tright {
+            bindings = <&kp LS(LC(LG(B)))>;
+            key-positions = <31 1 2>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        missionControl {
+            bindings = <&kp LC(LG(D))>;
+            key-positions = <31 4 3>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     macros {
@@ -353,10 +377,10 @@
 
         macShorcuts0 {
             bindings = <
-&kp LS(LC(LG(A)))  &kp LG(LS(LC(B)))  &kp LC(LG(LA(A)))         &kp LC(LG(LA(B)))     &kp LG(LC(D))    &none  &none  &none  &none  &none
-&kp LG(A)          &kp LG(X)          &kp LG(C)                 &kp LG(V)             &kp LG(LC(F))    &none  &none  &none  &none  &none
-&kp LG(Z)          &kp LG(LS(N5))     &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)             &kp LG(W)        &none  &none  &none  &none  &none
-                                                                &kp LG(LEFT_BRACKET)  &none            &none  &none
+&kp LC(N1)  &kp LC(N2)      &kp LC(N3)                &kp LC(N4)            &kp LC(N5)       &none  &none  &none  &none  &none
+&kp LG(A)   &kp LG(X)       &kp LG(C)                 &kp LG(V)             &kp LG(LC(F))    &none  &none  &none  &none  &none
+&kp LG(Z)   &kp LG(LS(N5))  &kp LG(LS(LC(NUMBER_4)))  &kp LG(D)             &kp LG(W)        &none  &none  &none  &none  &none
+                                                      &kp LG(LEFT_BRACKET)  &none            &none  &none
             >;
         };
 
